@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art-quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/favicon.ico" />
+  </head>
+  <body class="body">
+    <header>
+      <div class="wrapper-horizontal header hide hide-display">
+        <div class="icon icon-home"></div>
+        <!--<div class="icon icon-settings"></div>-->
+        <div class="icon icon-categories"></div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section main-section wrapper-vertical">
+        <h1 class="main-caption">Art-quiz</h1>
+        <div class="wrapper-vertical">
+          <button class="button-main-page button-main-picture">
+            <h3 class="h3">Картины</h3>
+          </button>
+          <button class="button-main-page button-main-artist">
+            <h3 class="h3">Художники</h3>
+          </button>
+          <button class="button-main-page button-main-settings">
+            <h3 class="h3">Настройки</h3>
+          </button>
+        </div>
+
+        <img
+          class="logo-image"
+          src="./assets/images/Logo2.webp"
+          alt="logo"
+          width="180"
+        />
+      </section>
+      <section class="section category-section wrapper-vertical hide hide-display">
+        <h2 class="h2">Раунды</h2>
+        <!--Place to paste div Category-->
+      </section>
+      <section class="section artist-quiz-section hide hide-display">
+        <div class="timer-count font-answer"></div>
+        <div class="artist-quiz-question font-question"></div>
+        <div class="artist-answers-wrapper"></div>
+        <div class="indicators">
+          <div class="indicator"></div>
+        </div>
+        <!--Place to paste answer divs-->
+      </section>
+      <section class="section picture-quiz-section hide hide-display">
+        <div class="timer-count font-answer"></div>
+        <div class="picture-quiz-question font-question">
+          Кто написал эту картину?
+        </div>
+        <div class="picture-image"></div>
+        <div class="indicators">
+          <div class="indicator"></div>
+        </div>
+        <div class="picture-answers-wrapper"></div>
+      </section>
+      <section class="infopage-section hide hide-display">
+        <div class="resultIndicator"></div>
+        <div class="image-info"></div>
+        <p class="info-author font-info"></p>
+        <p class="info-picture font-info"></p>
+        <p class="info-year font-info"></p>
+        <button class="continue font-continue">Продолжить</button>
+      </section>
+      <section class="section round-result-section shadow hide hide-display">
+        <section class="round-result-popup">
+          <!--<div class="close-window"></div>-->
+          <div class="round-result font-round-result"></div>
+          <div class="trophy"></div>
+          <button class="go-back font-continue">Продолжить</button>
+        </section>
+      </section>
+      <section class="section category-result-section hide hide-display">
+        <div class="header-results font-results">Результаты</div>
+        <div class="result-wrapper"></div>
+      </section>
+      <section class="section settings-section shadow hide hide-display">
+        <div class="wrapper-vertical settings-wrapper">
+          <div class="close-window"></div>
+          <h2 class="h2 h2-settings">Настройки</h2>
+          <div class="sound-settings wrapper-vertical">
+            <h3 class="h3 h2-settings">Громкость</h3>
+            <div class="btn-sound mute"></div>
+            <input
+              class="range soundlevel"
+              type="range"
+              name="trek-sound"
+              id="id-trek-sound"
+            />
+          </div>
+          <div class="time-settings wrapper-vertical">
+            <div class="wrapper-horizontal">
+            <h3 class="h3 h2-settings">Игра на время</h3>          
+              <input class="id-timer" type="checkbox" name="timer" id="id-timer" />
+              <label for="id-timer"></label>
+            </h3>            
+            </div>
+          <div class="time-range-settings wrapper-horizontal">
+            <span class="font-info">5</span>
+            <span class="font-info">10</span>
+            <span class="font-info">15</span>
+            <span class="font-info">20</span>
+            <span class="font-info">25</span>
+            <span class="font-info">30</span>
+          </div>
+          <input
+              class="range timer-count"
+              type="range"
+              name="trek-time"
+              id="id-trek-time"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer section">
+        <li class="li-footer">
+          <a
+            class="footer-link text-body"
+            href="https://github.com/Dairin-dei"
+            target="_blank"
+            >@Dairin-dei</a
+          >
+        </li>
+        <li class="li-footer text-body">
+          2021
+        </li>
+        <li class="li-footer">
+          <a class="text-body" href="https://rs.school/js/" target="_blank"
+            ><img src="./assets/icons/rs_school_js.svg" alt="school logo" width="50"></a
+          >
+        </li>
+    </footer>
+  </body>
+</html>
